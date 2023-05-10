@@ -1,0 +1,15 @@
+```python
+def calculate_sum(num1, num2):
+    """
+    Calculate the sum of two numbers.
+
+    Args:
+        num1 (int): The first number.
+        num2 (int): The second number.
+
+    Returns:
+        int: The sum of the two numbers.
+    """
+    total_sum = num1 + num2
+    return total_sum
+'''

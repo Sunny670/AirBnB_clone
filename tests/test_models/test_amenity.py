@@ -19,13 +19,13 @@ class TestAmenity_instantiation(unittest.TestCase):
 
     def test_created_at_is_public_datetime(self):
         self.assertEqual(datetime, type(Amenity().created_at))
-        
+
     def test_new_instance_stored_in_objects(self):
         self.assertIn(Amenity(), models.storage.all().values())
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(Amenity().id))
-        
+
     def test_no_args_instantiates(self):
         self.assertEqual(Amenity, type(Amenity()))
 
@@ -116,7 +116,6 @@ class TestAmenity_save(unittest.TestCase):
         amm.save()
         self.assertLess(second_updated_at, amm.updated_at)
 
-
     def test_one_save(self):
         amm = Amenity()
         sleep(0.05)
@@ -136,6 +135,7 @@ class TestAmenity_save(unittest.TestCase):
         with self.assertRaises(TypeError):
             amm.save(None)
 
+
 class TestAmenity_to_dict(unittest.TestCase):
     """Unittest for testing to_dict method of Amenity class."""
     def test_to_dict_contains_correct_keys(self):
@@ -147,7 +147,6 @@ class TestAmenity_to_dict(unittest.TestCase):
 
     def test_to_dict_type(self):
         self.assertTrue(dict, type(Amenity().to_dict()))
-
 
     def test_to_dict_datetime_attributes_are_strs(self):
         amm = Amenity()

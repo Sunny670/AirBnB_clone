@@ -13,6 +13,7 @@ import os
 import models import storage
 import json
 
+
 class TestHBNBCommand(unittest.TestCase):
 
     """Tests HBNBCommand console."""

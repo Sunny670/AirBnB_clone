@@ -185,5 +185,6 @@ class TestCity_to_dict(unittest.TestCase):
         cy = City()
         self.assertNotEqual(cy.to_dict(), cy.__dict__)
 
+
 if __name__ == "__main__":
     unittest.main()

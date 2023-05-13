@@ -2,43 +2,7 @@
 # AirBnB Clone - The ConsoleDescription 🏠
 HolbertonBnB is a complete web application, integrating database storage, a back-end API, and front-end interfacing in a clone of AirBnB.
 
-The project currently only implements the back-end console.
-
-Classes 🆑
-HolbertonBnB utilizes the following classes:
-
-BaseModel	FileStorage	User	State	City	Amenity	Place	Review
-PUBLIC INSTANCE ATTRIBUTES	id
-created_at
-updated_at		Inherits from BaseModel	Inherits from BaseModel	Inherits from BaseModel	Inherits from BaseModel	Inherits from BaseModel	Inherits from BaseModel
-PUBLIC INSTANCE METHODS	save
-to_dict	all
-new
-save
-reload	""	""	""	""	""	""
-PUBLIC CLASS ATTRIBUTES			email
-password
-first_name
-last_name	name	state_id
-name	name	city_id
-user_id
-name
-description
-number_rooms
-number_bathrooms
-max_guest
-price_by_night
-latitude
-longitude
-amenity_ids	place_id
-user_id
-text
-PRIVATE CLASS ATTRIBUTES		file_path
-objects						
-Storage 🛄
-The above classes are handled by the abstracted storage engine defined in the FileStorage class.
-
-Every time the backend is initialized, HolbertonBnB instantiates an instance of FileStorage called storage. The storage object is loaded/re-loaded from any class instances stored in the JSON file file.json. As class instances are created, updated, or deleted, the storage object is used to register corresponding changes in the file.json.
+The project currently only implements the back-end console						
 
 Console 💻
 The console is a command line interpreter that permits management of the backend of HolbertonBnB. It can be used to handle and manipulate all classes utilized by the application (achieved by calls on the storage object defined above).
@@ -209,6 +173,7 @@ m', 'first_name': 'Holberton', 'updated_at': datetime.datetime(2019, 2, 17, 21,
 8019-0499-420f-8eec-ef0fdc863c02', 'created_at': datetime.datetime(2019, 2, 17,
 21, 54, 39, 234382)}
 (hbnb)
+
 Testing 📏
 Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
 
@@ -216,6 +181,7 @@ $ python3 unittest -m discover tests
 Alternatively, you can specify a single test file to run at a time:
 
 $ python3 unittest -m tests/test_console.py
+
 Authors ✒️
   Brigid Wambua <Bricecy>
   Sunny Thanki <Sunny670>

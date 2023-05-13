@@ -175,7 +175,8 @@ m', 'first_name': 'Holberton', 'updated_at': datetime.datetime(2019, 2, 17, 21,
 (hbnb)
 
 Testing 📏
-Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
+  
+ Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
 
 $ python3 unittest -m discover tests
 Alternatively, you can specify a single test file to run at a time:
@@ -183,6 +184,7 @@ Alternatively, you can specify a single test file to run at a time:
 $ python3 unittest -m tests/test_console.py
 
 Authors ✒️
+  
   Brigid Wambua <Bricecy>
   Sunny Thanki <Sunny670>
 

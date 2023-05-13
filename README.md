@@ -186,6 +186,7 @@ $ python3 unittest -m tests/test_console.py
 Authors ✒️
   
   Brigid Wambua <Bricecy>
+  
   Sunny Thanki <Sunny670>
 
 

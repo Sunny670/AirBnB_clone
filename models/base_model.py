@@ -13,19 +13,19 @@ class BaseModel:
     """contains a Basemodel parent class
     """
 
-    def __init__(self, *var_args, **var_kwargs):
+    def __init__(self, *args, **kwargs):
         """
         Creates instance of BaseModel
         Args:
-            *var_args: list of arguments
-            **var_kwargs: dict of value arguments
+            *args: list of arguments
+            **kwargs: dict of value arguments
         """
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-        if len(var_kwargs) != 0:
-            for k, v in var_kwargs.items():
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
                 if k == "created_at" or k == "updated_at":
                     self.__dict__[k] = datetime.strptime(
                         v, "%Y-%m-%dT%H:%M:%S.%f")

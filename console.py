@@ -2,16 +2,16 @@
 """Define the HBNB console project """
 
 import cmd
-import re
 from shlex import split
+import re
+from models.review import Review
 from models import storage
-from models.base_model import BaseModel
-from models.user import User
 from models.state import State
-from models.city import City
+from models.user import User
+from models.base_model import BaseModel
 from models.place import Place
 from models.amenity import Amenity
-from models.review import Review
+from models.city import City
 
 
 def parse(arg):
@@ -51,6 +51,10 @@ class HBNBCommand(cmd.Cmd):
         """An empty line does nothing."""
         pass
 
+    def do_quit(self, arg):
+        """Quit command for exiting program."""
+        return True
+
     def default(self, arg):
         """Default behavior of cmd module when input is  not valid"""
         argdict = {
@@ -72,15 +76,6 @@ class HBNBCommand(cmd.Cmd):
         print("*** Unknown syntax: {}".format(arg))
         return False
 
-    def do_quit(self, arg):
-        """Quit command for exiting program."""
-        return True
-
-    def do_EOF(self, arg):
-        """EOF signal to exit the program."""
-        print("")
-        return True
-
     def do_create(self, arg):
         """Creates instance and prints  id."""
         argl = parse(arg)
@@ -91,6 +86,11 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(eval(argl[0])().id)
             storage.save()
+
+    def do_EOF(self, arg):
+        """EOF signal to exit the program."""
+        print("")
+        return True
 
     def do_show(self, arg):
         """Print str rep of instance.\n        """

@@ -1,4 +1,4 @@
-![image](https://github.com/Sunny670/AirBnB_clone/assets/102362393/7534dc65-06d6-4786-ab98-124e39724461)
+
 # AirBnB Clone - The ConsoleDescription 🏠
 HolbertonBnB is a complete web application, integrating database storage, a back-end API, and front-end interfacing in a clone of AirBnB.
 
@@ -187,6 +187,6 @@ Authors ✒️
   
   Brigid Wambua <Bricecy>
   
-  Sunny Thanki <Sunny670>
+  Smitt Thanki <Sunny670>
 
 

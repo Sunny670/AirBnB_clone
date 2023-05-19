@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Header and Footer with Style Tag</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #FF0000;
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer {
+      background-color: #00FF00;
+      height: 60px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    
+    .center-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="center-text">Best School</h1>
+  </header>
+  
+  <footer>
+    <h2 class="center-text">Best School</h2>
+  </footer>
+</body>
+</html>
